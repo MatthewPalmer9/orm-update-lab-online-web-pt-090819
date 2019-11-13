@@ -27,6 +27,10 @@ class Student
     new_student
   end
 
+  def self.new_from_db
+    
+  end
+
   def self.drop_table
     sql = <<-SQL
     DROP TABLE students
