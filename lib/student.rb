@@ -38,7 +38,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql, name){|row|
-      binding.pry
+      row
     }
   end
 
