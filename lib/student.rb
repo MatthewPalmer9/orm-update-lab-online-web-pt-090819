@@ -38,8 +38,8 @@ class Student
     SQL
 
     DB[:conn].execute(sql, name).map{|row|
-      self.new_from_db(row)[1]
-    }
+      self.new_from_db(row)
+    }.first
   end
 
   def self.drop_table
