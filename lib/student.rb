@@ -38,7 +38,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql, name){|row|
-      row
+      row[2]
     }
   end
 
