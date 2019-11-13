@@ -37,8 +37,8 @@ class Student
     SELECT * FROM students WHERE name = ?
     SQL
 
-    DB[:conn].execute(sql, name){|row|
-      row[1]
+    DB[:conn].execute(sql, name).map{|row|
+      row
     }
   end
 
