@@ -42,5 +42,9 @@ class Student
     end
   end
 
-  def 
+  def update
+    sql = <<-SQL
+    UPDATE 
+    SQL
+  end
 end
