@@ -44,7 +44,7 @@ class Student
 
   def update
     sql = <<-SQL
-    UPDATE 
+    UPDATE students WHERE 
     SQL
   end
 end
