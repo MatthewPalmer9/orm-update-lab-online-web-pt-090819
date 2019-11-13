@@ -30,7 +30,8 @@ class Student
   end
 
   def save
-    new_student = self.new
-    new_student.
+    sql = <<-SQL
+    INSERT INTO students 
+    SQL
   end
 end
